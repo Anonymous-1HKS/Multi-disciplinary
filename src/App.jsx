@@ -6,11 +6,7 @@ import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
-import Login from './components/pages/Login';
-import Map from './components/pages/Map';
-import Courses from './components/pages/Courses';
-import Account from './components/pages/Account';
-import AboutUs from './components/pages/AboutUs';
+import Login from './components/pages/Login'; // Thêm trang Login
 
 function App() {
   return (
@@ -21,12 +17,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/products" element={<Products />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/map" element={<Map />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/bluetooth" element={<Bluetooth />} />
+        <Route path="/login" element={<Login />} /> {/* Route mới cho trang đăng nhập */}
       </Routes>
     </>
   );
